@@ -3,11 +3,11 @@
 STARSHIP_CONFIG="$HOME/.config/starship.toml"
 FISH_CONFIG="$HOME/.config/fish/config.fish"
 
-sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt-add-repository ppa:fish-shell/release-3 -y
 
 apt update && apt upgrade
 
-apt install fish -y
+apt install fish curl -y
 
 chsh -s /usr/bin/fish
 
